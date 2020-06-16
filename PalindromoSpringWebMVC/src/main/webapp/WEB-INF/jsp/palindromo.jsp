@@ -10,7 +10,7 @@ Totale parole: <b>${contaParole}</b>
 Totale parole palindrome: <b>${contatoreParolePalindrome}</b>
 
 <c:forEach items="${parolePalindrome}" var="pal">
-        <li>${pal}</li>
+        <c:out value="${pal}" />
 </c:forEach>
 
 
