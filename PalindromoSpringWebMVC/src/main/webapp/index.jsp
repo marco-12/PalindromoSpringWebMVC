@@ -6,7 +6,7 @@
 <body>
 	<form action="palindromo" method="post">
 		<input type="text" name="testo" placeholder="Inserisci la frase">
-		<input type="submit" value="Invio">
+		<input type="submit" value="Invia">
 	</form>
 </body>
 </html>

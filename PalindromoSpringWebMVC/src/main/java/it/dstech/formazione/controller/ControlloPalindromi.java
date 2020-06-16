@@ -10,7 +10,7 @@ public class ControlloPalindromi {
 
 
 	@RequestMapping(value = "/palindromo", method = RequestMethod.POST)
-	public ModelAndView Palindromo(@RequestParam("testo") String testo, Model model) {
+	public String Palindromo(@RequestParam("testo") String testo, Model model) {
 		
 		GestioneFrase gestione = new GestioneFrase();	
 		
@@ -18,7 +18,7 @@ public class ControlloPalindromi {
 		model.addAttribute("contatoreParolePalindrome", gestione.contaParolePalindrome(testo));
 		model.addAttribute("parolePalindrome", gestione.parolePalindrome);
 		
-		return new ModelAndView("risultato", "testo", model);
+		return "palindromo";
 	}
 
 }
